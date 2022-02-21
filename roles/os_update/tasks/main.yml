@@ -13,7 +13,7 @@
     msg: "{{ reg_dnf_output_installed.results | map(attribute='name') | list }}"
   when: ev_security_only == "no"
   
-  - name: Get packages that can be upgraded
+- name: Get packages that can be upgraded
   become: yes
   ansible.builtin.dnf:
     list: upgrades
