@@ -3,7 +3,5 @@
   become: yes  
 
   tasks:
-
-    - name: ping
-      shell: ping -c 1 -w 2 {{ ansible_host }}
-      ignore_errors: true
+    - name: test connection
+      ansible.builtin.ping:
