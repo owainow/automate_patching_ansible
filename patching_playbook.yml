@@ -1,0 +1,8 @@
+---
+- name: Patching
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: OS update - all packages or security fixes only
+      include_role:
+        name: os_update 
