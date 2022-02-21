@@ -2,7 +2,7 @@
 - name: Get packages that can be upgraded
   become: yes
   ansible.builtin.dnf:
-    list: upgrades
+    list: all
     state: latest
     update_cache: yes
   register: reg_dnf_output_all
