@@ -5,7 +5,7 @@ This repo has a working automated patching role with playbook to display how eas
 
 If you are running this against the latest rhpds instances it won't actually change anything. To show its utility I log into one of the end points and do the following: 
 
-yum remove tuned
-yum install tuned-2.14.0-3.el8
+1. yum remove tuned
+2. yum install tuned-2.14.0-3.el8
 
 This then lets the patching role install the latest version on whichever node. 
