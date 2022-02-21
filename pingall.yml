@@ -3,4 +3,7 @@
   become: yes  
 
   tasks:
-   - ping
+
+    - name: ping
+      shell: ping -c 1 -w 2 {{ ansible_host }}
+      ignore_errors: true
